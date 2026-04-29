@@ -22,11 +22,11 @@ export class CypressCommandProxy {
   private collectedCommands: { name: string; args: any[]; subject?: any; parentPromise?: Promise<any> }[] = [];
   private collectionSubject: any = undefined;
 
-  constructor(translator: CommandTranslator, page?: any) {
+  constructor(translator: CommandTranslator) {
     this.translator = translator;
   }
 
-  setTranslator(translator: CommandTranslator, page?: any): void {
+  setTranslator(translator: CommandTranslator): void {
     this.translator = translator;
   }
 

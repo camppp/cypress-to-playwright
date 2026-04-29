@@ -7,11 +7,11 @@ export function setupCypressToPlaywright(page: Page, context?: BrowserContext) {
 
   const existingProxy = (globalThis as any).__cypressCommandProxy;
   if (existingProxy) {
-    existingProxy.setTranslator(translator, page);
+    existingProxy.setTranslator(translator);
     return existingProxy.createCypressProxy();
   }
 
-  const proxy = new CypressCommandProxy(translator, page);
+  const proxy = new CypressCommandProxy(translator);
   (globalThis as any).__cypressCommandProxy = proxy;
   return proxy.createCypressProxy();
 }
