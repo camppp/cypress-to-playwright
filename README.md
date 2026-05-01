@@ -1,5 +1,7 @@
 # cypress-to-playwright
 
+[![npm](https://img.shields.io/npm/v/@camppp/cypress-to-playwright)](https://www.npmjs.com/package/@camppp/cypress-to-playwright)
+
 A package that translates Cypress commands to Playwright equivalents at runtime. When imported, it provides a proxy that intercepts Cypress-style commands and executes them using Playwright's API.
 
 > **Why?** Because enterprise migration consultants charge six figures to tell you to rewrite everything. This does it for you, automatically, at runtime — and yes, I built it for the memes. But it works. Seriously. Production-grade, fully typed, 103 integration tests passing, ready for `npm publish`. The memes just happened to be serious.
